@@ -8,6 +8,7 @@ import PetSocialCard from '../components/cards/PetSocialCard';
 import PetTakeoutCard from '../components/cards/PetTakeoutCard';
 
 const FeedContainer = () => {
+  // Trigger HMR update
   return (
     <div className="w-full h-full">
       <Swiper
