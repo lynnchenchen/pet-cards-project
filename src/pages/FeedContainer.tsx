@@ -8,9 +8,8 @@ import PetSocialCard from '../components/cards/PetSocialCard';
 import PetTakeoutCard from '../components/cards/PetTakeoutCard';
 
 const FeedContainer = () => {
-  // Trigger HMR update
   return (
-    <div className="w-full h-full">
+    <div className="absolute inset-0">
       <Swiper
         direction="vertical"
         slidesPerView={1}
@@ -19,13 +18,13 @@ const FeedContainer = () => {
         modules={[Mousewheel]}
         className="w-full h-full"
       >
-        <SwiperSlide>
+        <SwiperSlide className="h-full w-full">
           <PetProfileCard />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="h-full w-full">
           <PetSocialCard />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="h-full w-full">
           <PetTakeoutCard />
         </SwiperSlide>
       </Swiper>
